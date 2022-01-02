@@ -1,0 +1,92 @@
+%editGoals {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  button {
+    margin: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    outline: none;
+    border: none;
+    box-shadow: 3px 5px 20px 2px #666;
+    cursor: pointer;
+    text-transform: capitalize;
+    &:hover {
+      box-shadow: 3px 5px 20px 2px #777;
+    }
+  }
+  form {
+    position: absolute;
+    top: 15vh;
+    left: 38vw;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 5px 20px 2px #666;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    z-index: 2;
+    input,
+    textarea {
+      margin: 0.75rem;
+      padding: 0.75rem;
+      border: none;
+      outline: none;
+      border-radius: 0.75rem;
+      box-shadow: inset 3px 5px 20px 2px #666;
+      background-color: #fff;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.75rem;
+    margin: 0.75rem;
+    border-radius: 0.75rem;
+    box-shadow: 3px 5px 20px 2px #666;
+  }
+}
+
+.desktop {
+  @extend %editGoals;
+}
+
+@media (max-width: 900px) {
+  .desktop {
+    grid-template-columns: repeat(3, 1fr);
+    form {
+      left: 30vw;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop {
+    grid-template-columns: repeat(2, 1fr);
+    form {
+      left: 20vw;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .desktop {
+    grid-template-columns: repeat(1, 1fr);
+    form {
+      left: 5vw;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .desktop {
+    form {
+      left: 0vw;
+      width: 100%;
+    }
+  }
+}
