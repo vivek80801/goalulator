@@ -8,4 +8,4 @@ Goalulator is a web app. Which is used to track progress of goals.
 
 ## Video
 
-[video of goalulator](https://youtu.be/WFXEjHv3KMk "watch video")
+[video of goalulator](https://youtu.be/10Ua0qnYPKg "watch video")
