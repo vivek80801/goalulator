@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../logo.svg";
 import navbar from "./navbar.module.scss";
 
 const Navbar: React.FC = (): JSX.Element => {
@@ -8,7 +7,7 @@ const Navbar: React.FC = (): JSX.Element => {
     <>
       <nav className={navbar.desktop}>
         <div>
-          <img src={logo} alt="logo" />
+          <img src={"./goalulator.png"} alt="logo" />
         </div>
         <ul>
           <li>
